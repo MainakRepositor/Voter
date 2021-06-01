@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block custom_css %}
+<link rel="stylesheet" href="{% static 'css/home_style.css' %}">
+{% endblock custom_css %}
+
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <div id="home-content">
+                <img src="https://i.pinimg.com/originals/b0/0c/92/b00c92e2a04a1ce04e31ff53205bad4f.gif" width="200" height="150">
+                <h1>SUS Biometric Polling Solutions</h1>
+                <h3>Vote Your Choice. Your Voice Matters.</h3>
+                <hr>
+                <a class="btn btn-light btn-lg" href="{% url 'polls:list' %}" role="button">Get Started </a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
